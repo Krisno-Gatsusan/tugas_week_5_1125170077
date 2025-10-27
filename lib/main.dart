@@ -39,9 +39,24 @@ class MyKR extends StatelessWidget {
         ],
       ),
       body: Container(
-        alignment: Alignment.center,
         margin: EdgeInsets.fromLTRB(5, 5, 5, 5),
-        decoration: BoxDecoration(color: Colors.blue),
+        alignment: Alignment.center,
+        color: Colors.blue,
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            const Text(
+              "GALERI PEMANDANGAN",
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+            const SizedBox(height: 20),
+          ],
+        ),
       ),
     );
   }

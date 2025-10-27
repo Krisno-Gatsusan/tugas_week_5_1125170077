@@ -71,9 +71,36 @@ class MyKR extends StatelessWidget {
                   height: 200,
                   fit: BoxFit.cover,
                 ),
+
+                Image.asset(
+                  '../assets/images/nung.jpg',
+                  width: 300,
+                  height: 200,
+                  fit: BoxFit.cover,
+                ),
+
+                Image.asset(
+                  '../assets/images/air.jpg',
+                  width: 300,
+                  height: 200,
+                  fit: BoxFit.cover,
+                ),
               ],
             ),
           ],
+        ),
+      ),
+      bottomNavigationBar: Container(
+        color: Colors.orange,
+        padding: const EdgeInsets.all(12),
+        child: const Text(
+          "© 2025 Dibuat oleh Krisno Gatsusan. Semua hak dilindungi.",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 14,
+            fontWeight: FontWeight.w500,
+          ),
         ),
       ),
     );

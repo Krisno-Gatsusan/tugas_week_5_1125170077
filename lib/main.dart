@@ -54,7 +54,25 @@ class MyKR extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            const SizedBox(height: 20),
+            Text(
+              "",
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Image.asset(
+                  '../assets/images/laut.jpg',
+                  width: 300,
+                  height: 200,
+                  fit: BoxFit.cover,
+                ),
+              ],
+            ),
           ],
         ),
       ),

@@ -24,9 +24,24 @@ class MyKR extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("TUGAS 5"),
+        title: Text(
+          "TUGAS 5",
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            fontSize: 22,
+          ),
+        ),
         backgroundColor: Colors.orange,
-        actions: [Icon(Icons.person, color: Colors.white)],
+        actions: const [
+          Icon(Icons.person, color: Colors.white),
+          SizedBox(width: 10),
+        ],
+      ),
+      body: Container(
+        alignment: Alignment.center,
+        margin: EdgeInsets.fromLTRB(5, 5, 5, 5),
+        decoration: BoxDecoration(color: Colors.blue),
       ),
     );
   }
